@@ -1,0 +1,10 @@
+.container-two {
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+hr {
+    margin: 10px;
+}
