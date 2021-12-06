@@ -1,6 +1,6 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
-
+import '../assets/css/listOfProducts.css'
 function ListOfProducts(props) {
 
     const [products, setProducts] = useState()
@@ -18,11 +18,13 @@ function ListOfProducts(props) {
 
     return (
         <React.Fragment>
-            <div>
+            <div className="box-listProducts">
+                <h1 className="titleList">Productos en DB</h1>
+            
                 <ul>
                     {!products ? 'Cargando....' : 
                         products.map((product, i) => {
-                            return <li>{product.name}</li>
+                            return <li className="listProduct">{product.name}</li>
                         })
                     }
                 </ul>
