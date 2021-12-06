@@ -15,6 +15,9 @@
 .box-img {
     text-align: center;
 }
+.box-img img{
+    width: 300px;
+}
 .img-lastProduct {
     box-shadow: 0px 0px 10px rgb(100 100 100);
 }
