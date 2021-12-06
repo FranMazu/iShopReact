@@ -18,11 +18,15 @@ function LastProduct() {
     let url = "http://localhost:3080/images/products/"
     return (
         <React.Fragment>
-        <div>
-            <h1 className="title-last-product">Ultimo producto agregado</h1>
-            <h1>{lastProduct.name}</h1>
-            <h1>{lastProduct.price}</h1>
-            <img src={url + lastProduct.image} alt="imagén last-product"></img>
+        <div className="box-lastProduct">
+            <div>
+                <h1 className="title-last-product">Ultimo producto agregado</h1>
+                <h2 className="titleProduct">{lastProduct.name}</h2>
+                <h1 className="priceProduct">$ {lastProduct.price}</h1>
+            </div>
+            <div className="box-img">
+                <img src={url + lastProduct.image} alt="imagén last-product" className="img-lastProduct"></img>
+            </div>
         </div>    
         </React.Fragment>
     

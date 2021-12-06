@@ -41,9 +41,9 @@ function Navbar() {
             <hr/>
             <div className="container-two">
                 <CountCategory />
+                <ListOfProducts />
                 <LastProduct />
             </div>
-                <ListOfProducts />
         </React.Fragment>
     )
 }
